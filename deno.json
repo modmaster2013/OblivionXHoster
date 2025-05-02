@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "deploy": ""
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "deploy": {
+    "project": "a46bdb9e-e318-4a20-9117-c79d7d34657a",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "jsr:@std/http/file-server"
+  }
+}
